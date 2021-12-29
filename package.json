@@ -1,6 +1,6 @@
 {
 	"name": "@novas/eslint-config",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "ESLint config for ESNext and TypeScript",
 	"main": "index.js",
 	"repository": "https://github.com/codynova/eslint-config",
@@ -9,6 +9,7 @@
 	"dependencies": {},
 	"devDependencies": {},
 	"peerDependencies": {
+		"@babel/core": "^7.16.5",
 		"@babel/eslint-parser": "^7.16.5",
 		"@babel/eslint-plugin": "^7.16.5",
 		"@typescript-eslint/eslint-plugin": "^5.8.0",
