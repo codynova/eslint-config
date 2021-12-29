@@ -2,33 +2,20 @@
 
 ESLint config for ES2021 and TypeScript
 
-
 ## Installation
 
-Install this module and its `peerDependencies`, then extend it in your `.eslintrc`:
+To use in your own custom configuration, install then extend this package in your ESLint config:
 
-```jsonc
-// package.json
-{
-	"devDependencies": {
-		"@novas/eslint-config": "latest",
-		// peerDependencies
-		"@babel/eslint-parser": "7.16.0",
-		"@babel/eslint-plugin": "7.14.5",
-		"@typescript-eslint/eslint-plugin": "5.3.0",
-		"@typescript-eslint/parser": "5.3.0",
-		"eslint": "8.2.0",
-		"eslint-config-prettier": "8.3.0",
-		"eslint-plugin-react": "7.26.1",
-		"eslint-plugin-react-hooks": "4.2.0",
-		"typescript": ">=4.4.4"
-	}
-}
+1. Install dependencies
+```sh
+yarn add --dev @novas/eslint-config @babel/eslint-parser @babel/eslint-plugin @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-react eslint-plugin-react-hooks typescript 
 ```
+Note: Due to the way ESLint `overrides` work, Typescript `devDependencies` are required regardless of whether you are using Typescript in your project.
 
+2. Configure ESLint
 ```jsonc
 // .eslintrc
 {
-	"extends": [ "@novas/eslint-config" ]
+    "extends": ["@novas/eslint-config"]
 }
 ```
